@@ -1,0 +1,35 @@
+---
+name: {{agent-name}}
+description: {{One-line "when to invoke" + "when NOT to invoke" — this is the routing input. Be specific about scope.}}
+tools:
+  - Read
+  - Grep
+  - Glob
+model: sonnet
+---
+
+# {{Agent display name}}
+
+## Role
+
+{{One paragraph: what this agent is responsible for, and what it is NOT responsible for. The boundary matters more than the responsibility list.}}
+
+## Scope
+
+- {{Concrete in-scope behavior 1}}
+- {{Concrete in-scope behavior 2}}
+- {{Concrete out-of-scope item — defer to which other agent or skill?}}
+
+## Operating rules
+
+- {{Rule 1: e.g., "Never modify code without first showing the plan"}}
+- {{Rule 2: e.g., "Treat tests as source of truth"}}
+- {{Rule 3}}
+
+## Output format
+
+{{If the agent produces structured output (a report, a checklist, a diff), describe the format here. Otherwise, remove this section.}}
+
+## Notes
+
+{{Optional: edge cases, known limitations, or hand-off conventions to other agents.}}
